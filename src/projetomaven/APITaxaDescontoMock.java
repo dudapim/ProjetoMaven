@@ -1,13 +1,14 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package projetomaven;
 
-/**
- *
- * @author dudam
- */
 public class APITaxaDescontoMock {
-    
+    private static double TAXA_ENTREGA = 10.00;
+
+    public static double getTaxaEntregaPadrao() {
+        return TAXA_ENTREGA;
+    }
+
+    public static void setTaxaEntregaPadrao(double novaTaxaEntrega) {
+        TAXA_ENTREGA = novaTaxaEntrega;
+    }
 }

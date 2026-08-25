@@ -1,13 +1,9 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Interface.java to edit this template
- */
-package projetomaven;
 
-/**
- *
- * @author dudam
- */
+package projetomaven;
+import java.util.Optional;
+
+
 public interface IFormaDescontoTaxaEntrega {
-    
+    Optional<CupomDescontoEntrega> calcularDesconto(Pedido pedido);
+    boolean seAplica(Pedido pedido);
 }
