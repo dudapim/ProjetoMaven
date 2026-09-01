@@ -28,6 +28,7 @@ public class CalculadoraTaxaDeDescontoService {
 
             if (resultado.isPresent()) {
                 pedido.aplicarDesconto(resultado.get());
+                
             }
         }
     }
